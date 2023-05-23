@@ -6,11 +6,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C:\\Users\\Administrator\\IdeaProjects\\AndroidAppTesting\\src\\test\\java\\com\\apptesting\\feature\\Calculator.feature",
-//        plugin = "pretty",
+        features = "src/test/java/com/apptesting/feature/Calculator.feature",
         tags = "@test",
         glue = "com.apptesting.steps",
-        dryRun = true
+        plugin = { "pretty", "html: ExecutionReport/cucumber-reports.html"}
+
 )
 public class MainRunner {
 }
