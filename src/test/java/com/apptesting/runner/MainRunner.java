@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
         features = "C:\\Users\\Administrator\\IdeaProjects\\AndroidAppTesting\\src\\test\\java\\com\\apptesting\\feature\\Calculator.feature",
 //        plugin = "pretty",
         tags = "@test",
-        glue = "com.apptesting.steps"
+        glue = "com.apptesting.steps",
+        dryRun = true
 )
 public class MainRunner {
 }
